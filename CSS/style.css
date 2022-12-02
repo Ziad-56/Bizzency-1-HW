@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px ;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.align_center{
+    align-items: center;
+}
+
+:root {
+    --mainColor: #0f2f44;
+    --yellowColor: #ffc712;
+    --primaryFont: "Ubuntu", sans-serif;
+    --secondaryFont: "Open Sans", sans-serif;
+    --thirdFont: "Abril Fatface", cursive;
+  }
+  body{
+    font-family:var(--primaryFont);
+  }
+/* COMMON CSS ENDS HERE */
+
+/* Header part starts here */
+header{
+    background-color: var(--mainColor);
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 19px 0;
+}
+header .welcome{
+    width: 50%;
+}
+header .opening{
+    width: 50%;
+    text-align: right;
+}
+
+
+/* Header part ends here */
+
+/* nav ber starts here */
+nav .logo{
+    width: 30%;
+}
+nav .menu{
+    width: 70%;
+}
+.menu ul{
+    text-align: right;
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a {
+    color: #222;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 40px 20px;
+    display: block;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+  .menu ul li:hover a{
+    background-color: #fff9e6;
+    color: var(--yellowColor);
+  }
+
+  .menu .submenu {
+    position: absolute;
+    width: 150px;
+    text-align: center;
+    background-color: #eee;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 30px;
+    transition: 0.3s;
+  }
+  
+  .menu ul li:hover > .submenu {
+    opacity: 1;
+    margin-top: 0;
+    visibility: visible;
+  }
+  .menu ul li a .down_arrow{
+      transition: 0.3s;
+  }
+  .menu ul li:hover a .down_arrow {
+    transform: rotate(180deg);
+    display:inline-block;
+  }
+  
+  .menu .submenu li {
+    display: block;
+  }
+  
+  .menu .submenu li a {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  /* Banner starts here */
+  #banner{
+      background-image: url(../Images/banner.jpg);
+      height: 600px;
+      background-size: cover;
+      background-position: center;
+  }
+  #banner .row{
+      height: 600px;
+  }
+  #banner h2{
+    text-transform: capitalize;
+    color: var(--mainColor);
+    font-size: 50px;
+  }
+  #banner .success{
+    text-transform: uppercase;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 70px;
+  }
+  #banner .ambition{
+    color: #8484bf;
+    font-size: 32px;
+    letter-spacing: 14px;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  #banner p{
+    font-size: 14px;
+    color: #444444;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  #banner .button{
+    background-color: #8484bf;
+    padding: 5px;
+    color: white;
+    border-radius: 05px;
+    -webkit-border-radius: 05px;
+    -moz-border-radius: 05px;
+    -ms-border-radius: 05px;
+    -o-border-radius: 05px;
+    margin-top: 10px;
+}
+#banner .play_button{
+    background-color: white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+ /* Banner ends here */
